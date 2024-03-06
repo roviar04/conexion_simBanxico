@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="80" nombre="CLVSIM" recibido="1" firmado="0" acuse="0" partido="0" sumaBytes="0" cifrado="0" bean="banxico.spei.clases.values.CLVSimValue">
+		<Campo id="numAlgoritmo" orden="1" tipoDato="short" tamano="2" requerido="1" mapeo="numAlgoritmo" />
+		<Campo id="claveSimetrica" orden="2" tipoDato="string" tamano="0" requerido="1" mapeo="claveSimetrica" />
+		<Campo id="firmaClaveSimetrica" orden="3" tipoDato="string" tamano="0" requerido="1" mapeo="firmaClaveSimetrica" />
+	</Mensaje>
+</MsgConfiguration>

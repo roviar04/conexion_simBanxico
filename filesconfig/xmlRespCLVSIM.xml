@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="221" nombre="RESPCLVSIM" recibido="0" firmado="0" acuse="0" partido="0" sumaBytes="0" cifrado="0" bean="banxico.spei.clases.values.RespCLVSimValue">
+		<Campo id="firmaCLVSim" orden="1" tipoDato="string" tamano="0" requerido="1" mapeo="firmaCLVSim" />
+	</Mensaje>
+</MsgConfiguration>

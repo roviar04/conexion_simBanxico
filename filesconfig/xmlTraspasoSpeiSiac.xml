@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="199" nombre="TRASPASOSPEISIAC" recibido="0"
+		firmado="1" acuse="0" partido="0" sumaBytes="1"
+		bean="banxico.spei.clases.values.TraspasoSpeiSiacValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1"
+			mapeo="horaMaquina" />
+		<Campo id="fechaOperacion" orden="3" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaOperacion" />
+		<Campo id="folioSolicitud" orden="4" tipoDato="long" tamano="4"
+			requerido="1" mapeo="folioSolicitud" />
+		<Campo id="indiceInstitucionOrdenante" orden="5" tipoDato="char"
+			tamano="1" requerido="1" mapeo="indInstitucion" />
+		<Campo id="claveOrdenante" orden="6" tipoDato="long" tamano="4"
+			requerido="1" mapeo="cveInstitucion" />
+		<Campo id="indiceCertFirmante" orden="7" tipoDato="char" tamano="1"
+			requerido="1" mapeo="indCertFirm" />
+		<Campo id="monto" orden="8" tipoDato="money" tamano="8"
+			requerido="1" mapeo="monto" />
+		<Campo id="tipoTraspaso" orden="9" tipoDato="short" tamano="2"
+			requerido="1" mapeo="tipoTraspaso" />
+		<Campo id="claveRastreo" orden="10" tipoDato="string" tamano="0"
+			requerido="1" mapeo="cveRastreo" />
+		<Campo id="totalDetalle" orden="11" tipoDato="long" tamano="4"
+			requerido="1" mapeo="tamTotalDetalle" />
+		<Campo id="detalle" orden="12" tipoDato="byte" tamano="0"
+			requerido="0" mapeo="detalle" />
+	</Mensaje>
+</MsgConfiguration>

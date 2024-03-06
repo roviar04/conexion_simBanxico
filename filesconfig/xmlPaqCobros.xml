@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="26" nombre="PAQCOBROS" recibido="1" firmado="0"
+		acuse="0" partido="1" sumaBytes="1"
+		bean="banxico.spei.clases.values.PaqCobrosValue">
+		<Campo id="tamFirma" orden="1" tipoDato="long" tamano="4"
+			requerido="1" mapeo="tamfirma" />
+		<Campo id="fechaServidor" orden="2" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaMaquinaMsg" />
+		<Campo id="horaServidor" orden="3" tipoDato="time" tamano="3"
+			requerido="1" mapeo="horaMaquinaMsg" />
+		<ArregloSimple id="Buffer" orden="4" tipoDato="Array"
+			subtipo="byte" tamano="1" requerido="1" tamanoArreglo="N" mapeo="bufferMensaje" />
+	</Mensaje>
+</MsgConfiguration>
+

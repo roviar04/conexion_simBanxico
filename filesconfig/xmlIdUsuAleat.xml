@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="183" nombre="IdUsuarioAleat" recibido="1" firmado="1"
+		acuse="0" partido="0" sumaBytes="0"
+		bean="com.praxis.speilight.communication.beans.MensajeIdUsuarioAleatBean">
+		<Campo id="claveCifrada" orden="2" tipoDato="string" tamano="0"
+			requerido="1" mapeo="claveCifrada" />
+	</Mensaje>
+</MsgConfiguration>

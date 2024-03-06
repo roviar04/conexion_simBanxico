@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="25" nombre="ABONOS" recibido="1" firmado="1"
+		acuse="0" partido="1" sumaBytes="1"
+		bean="banxico.spei.clases.values.AbonosTuxedoValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1"
+			mapeo="horaMaquina" />
+		<Campo id="fechaOperacion" orden="3" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaOperacion" />
+		<Campo id="folioServidor" orden="4" tipoDato="long" tamano="4"
+			requerido="1" mapeo="folioServidor" />
+		<Campo id="noAbonosTT" orden="5" tipoDato="long" tamano="4"
+			requerido="1" mapeo="numAbonosT" />
+		<ArregloSimple id="indiceInstitucionOrdenanteT" orden="6"
+			tipoDato="ArrayList" subtipo="char" tamano="1" requerido="0"
+			tamanoArreglo="noAbonosTT" mapeo="Instituciones" />
+		<ArregloSimple id="claveOrdenanteT" orden="7" tipoDato="ArrayList"
+			subtipo="long" tamano="4" requerido="0" tamanoArreglo="noAbonosTT"
+			mapeo="InstClaves" />
+		<ArregloSimple id="folioPaqueteT" orden="8" tipoDato="ArrayList"
+			subtipo="long" tamano="4" requerido="0" tamanoArreglo="noAbonosTT"
+			mapeo="NumFoliosPaq" />
+		<ArregloSimple id="folioPago" orden="9" tipoDato="ArrayList"
+			subtipo="short" tamano="2" requerido="0" tamanoArreglo="noAbonosTT"
+			mapeo="FoliosPagos" />
+		<Campo id="montoAbonosTT" orden="10" tipoDato="money" tamano="8"
+			requerido="1" mapeo="MontoTotalAbonosT" />
+		<Campo id="noAbonosTV" orden="11" tipoDato="long" tamano="4"
+			requerido="1" mapeo="NumAbonosV" />
+		<ArregloSimple id="tamanosMensaje" orden="12" tipoDato="ArrayList"
+			subtipo="short" tamano="2" requerido="0" tamanoArreglo="noAbonosTV"
+			mapeo="tamanosMensajes" />
+		<Campo id="tamanoBuffer" orden="13" tipoDato="long" tamano="4"
+			requerido="0" mapeo="tamanoBuffer" />
+		<ArregloSimple id="Buffer" orden="14" tipoDato="Array"
+			subtipo="byte" tamano="1" requerido="0" tamanoArreglo="tamanoBuffer"
+			mapeo="bufferMensaje" />
+		<Campo id="montoAbonosTV" orden="15" tipoDato="money" tamano="8"
+			requerido="1" mapeo="MontoTotalAbonosV" />
+		<Campo id="saldoNoReservado" orden="16" tipoDato="money" tamano="8"
+			requerido="1" mapeo="Saldo" />
+		<Campo id="saldoReservado" orden="17" tipoDato="money" tamano="8"
+			requerido="1" mapeo="SaldoRes" />
+	</Mensaje>
+</MsgConfiguration>

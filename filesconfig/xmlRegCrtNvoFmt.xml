@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="195" nombre="RegCrtNvoFmt" recibido="1" firmado="1"
+		acuse="0" partido="0" sumaBytes="0"
+		bean="com.praxis.speilight.communication.beans.MensajeRegCrtNvoFmtBean">
+		<Campo id="estadoCert" orden="2" tipoDato="short" tamano="2"
+			requerido="1" mapeo="estadoCert" />
+		<Campo id="fechaCaducidad" orden="3" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaCaducidad" />
+		<Campo id="fechaRegistro" orden="4" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaRegistro" />
+		<Campo id="fecha" orden="5" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fecha" />
+		<Campo id="certificado" orden="6" tipoDato="string" tamano="0"
+			requerido="1" mapeo="certificado" />
+	</Mensaje>
+</MsgConfiguration>

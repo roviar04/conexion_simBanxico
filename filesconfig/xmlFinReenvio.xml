@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="32" nombre="FINREENVIO" recibido="1" firmado="0"
+		acuse="0" partido="0" sumaBytes="0"
+		bean="banxico.spei.clases.values.FinReenvioValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="FechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1"
+			mapeo="HoraMaquina" />
+		<Campo id="bytesParaCliente" orden="3" tipoDato="long" tamano="4"
+			requerido="1" mapeo="bytesRecibidos" />
+		<Campo id="saldoTotal" orden="4" tipoDato="money" tamano="8"
+			requerido="1" mapeo="saldoTotal" />
+		<Campo id="bytesDelCliente" orden="5" tipoDato="long" tamano="4"
+			requerido="1" mapeo="bytesEnviados" />
+		<Campo id="saldoReservado" orden="6" tipoDato="money" tamano="8"
+			requerido="1" mapeo="saldoReservado" />
+	</Mensaje>
+</MsgConfiguration>

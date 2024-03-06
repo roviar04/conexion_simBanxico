@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="80" nombre="PideCrtNvoFmt" recibido="0" firmado="0"
+		acuse="0" partido="0" sumaBytes="0"
+		bean="com.praxis.speilight.communication.beans.MensajePideNvoCrtFmtBean">
+		<Campo id="noCertificado" orden="1" tipoDato="string" tamano="0"
+			requerido="1" mapeo="noCertificado" />
+	</Mensaje>
+</MsgConfiguration>

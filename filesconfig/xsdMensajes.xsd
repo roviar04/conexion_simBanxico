@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<xs:schema id="MsgConfiguration" targetNamespace="http://tempuri.org/xsdMensajes.xsd"
+	xmlns="http://tempuri.org/xsdMensajes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Mensaje">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Campo" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="ArregloCompuesto" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="ArregloSimple" />
+				<xs:element ref="Mensaje" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:int" />
+			<xs:attribute name="nombre" type="xs:string" />
+			<xs:attribute name="recibido" type="xs:int" />
+			<xs:attribute name="firmado" type="xs:int" />
+			<xs:attribute name="acuse" type="xs:int" />
+			<xs:attribute name="partido" type="xs:int" />
+			<xs:attribute name="sumaBytes" type="xs:int" />
+			<xs:attribute name="bean" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Campo">
+		<xs:complexType>
+			<xs:attribute name="id" type="xs:string" />
+			<xs:attribute name="orden" type="xs:int" />
+			<xs:attribute name="tipoDato" type="xs:string" />
+			<xs:attribute name="tamano" type="xs:int" />
+			<xs:attribute name="requerido" type="xs:int" />
+			<xs:attribute name="formato" type="xs:string" />
+			<xs:attribute name="mapeo" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ArregloCompuesto">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Campo" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="Mensaje" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" />
+			<xs:attribute name="orden" type="xs:int" />
+			<xs:attribute name="tamanoArreglo" type="xs:string" />
+			<xs:attribute name="tipoDato" type="xs:string" />
+			<xs:attribute name="subtipo" type="xs:string" />
+			<xs:attribute name="mapeo" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MsgConfiguration">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="Mensaje" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ArregloSimple">
+		<xs:complexType>
+			<xs:sequence />
+			<xs:attribute name="id" type="xs:string" />
+			<xs:attribute name="orden" type="xs:int" />
+			<xs:attribute name="tipoDato" type="xs:string" />
+			<xs:attribute name="subtipo" type="xs:string" />
+			<xs:attribute name="tamano" type="xs:int" />
+			<xs:attribute name="requerido" type="xs:int" />
+			<xs:attribute name="formato" type="xs:string" />
+			<xs:attribute name="mapeo" type="xs:string" />
+			<xs:attribute name="tamanoArreglo" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

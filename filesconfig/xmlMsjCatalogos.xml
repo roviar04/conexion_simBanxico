@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="31" nombre="MSJCATALOGOS" recibido="1" firmado="0"
+		acuse="0" partido="1" sumaBytes="0"
+		bean="banxico.spei.clases.values.MsjCatalogosValue">
+		<Campo id="cantCatalogos" orden="1" tipoDato="long" tamano="4"
+			requerido="1" mapeo="numeroCatalogos" />
+		<ArregloSimple id="identificadores" orden="2" tipoDato="ArrayList"
+			subtipo="short" tamano="2" requerido="0" tamanoArreglo="cantCatalogos"
+			mapeo="idsCatalogo" />
+		<ArregloSimple id="nombres" orden="3" tipoDato="ArrayList"
+			subtipo="string" tamano="0" requerido="0" tamanoArreglo="cantCatalogos"
+			mapeo="nombreCatalogos" />
+		<ArregloSimple id="formatos" orden="4" tipoDato="ArrayList"
+			subtipo="string" tamano="0" requerido="0" tamanoArreglo="cantCatalogos"
+			mapeo="formatos" />
+		<ArregloSimple id="descripciones" orden="5" tipoDato="ArrayList"
+			subtipo="string" tamano="0" requerido="0" tamanoArreglo="cantCatalogos"
+			mapeo="descripciones" />
+		<ArregloSimple id="tamanoArregloRegistros" orden="6"
+			tipoDato="ArrayList" subtipo="long" tamano="4" requerido="0"
+			tamanoArreglo="cantCatalogos" mapeo="numRegistrosCatalogo" />
+		<Campo id="cantDatosN" orden="7" tipoDato="long" tamano="4"
+			requerido="1" mapeo="indiceDatosN" />
+		<ArregloSimple id="datosN" orden="8" tipoDato="ArrayList"
+			subtipo="long" tamano="4" requerido="0" tamanoArreglo="cantDatosN"
+			mapeo="datosN" />
+		<Campo id="cantDatosD" orden="9" tipoDato="long" tamano="4"
+			requerido="1" mapeo="indiceDatosD" />
+		<ArregloSimple id="datosD" orden="10" tipoDato="ArrayList"
+			subtipo="short" tamano="2" requerido="0" tamanoArreglo="cantDatosD"
+			mapeo="datosD" />
+		<Campo id="cantDatosL" orden="11" tipoDato="long" tamano="4"
+			requerido="1" mapeo="indiceDatosL" />
+		<ArregloSimple id="datosL" orden="12" tipoDato="ArrayList"
+			subtipo="long" tamano="4" requerido="0" tamanoArreglo="cantDatosL"
+			mapeo="datosL" />
+		<Campo id="cantDatosS" orden="13" tipoDato="long" tamano="4"
+			requerido="1" mapeo="indiceDatosS" />
+		<ArregloSimple id="datosS" orden="14" tipoDato="ArrayList"
+			subtipo="string" tamano="0" requerido="0" tamanoArreglo="cantDatosS"
+			mapeo="datosS" />
+		<Campo id="cantDatosC" orden="15" tipoDato="long" tamano="4"
+			requerido="1" mapeo="indiceDatosC" />
+		<ArregloSimple id="datosC" orden="16" tipoDato="ArrayList"
+			subtipo="schar" tamano="1" requerido="0" tamanoArreglo="cantDatosC"
+			mapeo="datosC" />
+	</Mensaje>
+</MsgConfiguration>

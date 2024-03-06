@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="13" nombre="ENSESION" recibido="1" firmado="0"
+		acuse="0" partido="1" sumaBytes="0"
+		bean="banxico.spei.clases.values.EnSesionValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1"
+			mapeo="horaMaquina" />
+		<Campo id="longMaxMensajes" orden="3" tipoDato="long" tamano="4"
+			requerido="1" mapeo="longMaxMensaje" />
+		<Campo id="longMaxNumSerie" orden="4" tipoDato="long" tamano="4"
+			requerido="1" mapeo="longMaxNumSerieCert" />
+		<Campo id="noInstParticipantes" orden="5" tipoDato="long"
+			tamano="4" requerido="1" mapeo="numInstituciones" />
+		<ArregloSimple id="instituciones" orden="6" tipoDato="ArrayList"
+			subtipo="long" tamano="4" requerido="1" tamanoArreglo="noInstParticipantes"
+			mapeo="insClave" />
+		<ArregloSimple id="nombres" orden="7" tipoDato="ArrayList"
+			subtipo="string" tamano="0" requerido="1" tamanoArreglo="noInstParticipantes"
+			mapeo="insNombre" />
+		<ArregloSimple id="noCertificadosInstitucion" orden="8"
+			tipoDato="ArrayList" subtipo="char" tamano="1" requerido="1"
+			tamanoArreglo="noInstParticipantes" mapeo="tamCertificadosInst" />
+		<ArregloSimple id="estados" orden="9" tipoDato="ArrayList"
+			subtipo="schar" tamano="1" requerido="1" tamanoArreglo="noInstParticipantes"
+			mapeo="instEstado" />
+		<ArregloSimple id="estadosRecepcion" orden="10"
+			tipoDato="ArrayList" subtipo="schar" tamano="1" requerido="1"
+			tamanoArreglo="noInstParticipantes" mapeo="instEdoRecep" />
+		<Campo id="cantCertificados" orden="11" tipoDato="long" tamano="4"
+			requerido="1" mapeo="tamCertificadosAut" />
+		<ArregloSimple id="nosSerie" orden="12" tipoDato="ArrayList"
+			subtipo="string" tamano="0" requerido="1" tamanoArreglo="cantCertificados"
+			mapeo="cerSerie" />
+		<ArregloSimple id="estadosCertif" orden="13" tipoDato="ArrayList"
+			subtipo="schar" tamano="1" requerido="1" tamanoArreglo="cantCertificados"
+			mapeo="cerEstado" />
+		<Campo id="cantCertPropios" orden="14" tipoDato="long" tamano="4"
+			requerido="1" mapeo="tamCertificadoProp" />
+		<ArregloSimple id="noNiveles" orden="15" tipoDato="ArrayList"
+			subtipo="char" tamano="1" requerido="1" tamanoArreglo="cantCertPropios"
+			mapeo="tamNivelesCert" />
+		<Campo id="cantNiveles" orden="16" tipoDato="long" tamano="4"
+			requerido="1" mapeo="tamNiveles" />
+		<ArregloSimple id="niveles" orden="17" tipoDato="ArrayList"
+			subtipo="short" tamano="2" requerido="1" tamanoArreglo="cantNiveles"
+			mapeo="niveles" />
+		<Campo id="saldoInicial" orden="18" tipoDato="money" tamano="8"
+			requerido="1" mapeo="saldoInicial" />
+		<Campo id="veces" orden="19" tipoDato="short" tamano="2"
+			requerido="1" mapeo="numAumentosSaldo" />
+		<Campo id="porcentaje" orden="20" tipoDato="money" tamano="8"
+			requerido="1" mapeo="porcentaje" />
+		<Campo id="fechaOperacion" orden="21" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaOperacion" />
+		<Campo id="serieCertServidor" orden="22" tipoDato="string"
+			tamano="0" requerido="1" mapeo="numSerieCertBanxico" />
+		<Campo id="tamCveSimetrica" orden="23" tipoDato="long" tamano="4"
+			requerido="1" mapeo="tamanoCveSimetrica" />
+		<ArregloSimple id="claveSimetrica" orden="24" tipoDato="Array"
+			subtipo="byte" tamano="1" requerido="1" tamanoArreglo="tamCveSimetrica"
+			mapeo="claveSimetrica" />
+		<Campo id="tamCDEs" orden="25" tipoDato="long" tamano="4"
+			requerido="1" mapeo="tamanoCDEs" />
+	</Mensaje>
+</MsgConfiguration>
+

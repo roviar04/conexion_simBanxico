@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="255" nombre="PASSWREQ" recibido="1" firmado="0"
+		acuse="0" partido="0" sumaBytes="0" bean="MensajeTuxedoBean" />
+</MsgConfiguration>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="213" nombre="SMBITACORA" recibido="0" firmado="0"
+		acuse="0" partido="0" sumaBytes="0"
+		bean="banxico.spei.clases.values.BitacoraFECValue">
+		<Campo id="fechaUltConOk" orden="1" tipoDato="string" tamano="0"
+			requerido="1" mapeo="strFechaUltCon" />
+		<Campo id="horaUltConOk" orden="2" tipoDato="long" tamano="4"
+			requerido="1" mapeo="horaUltConOk" />
+		<Campo id="noFallos" orden="3" tipoDato="short" tamano="2"
+			requerido="1" mapeo="numIntConEr" />
+		<Campo id="fechaUltConEr" orden="4" tipoDato="string" tamano="0"
+			requerido="1" mapeo="strFechaUltConEr" />
+		<Campo id="horaUltConEr" orden="5" tipoDato="long" tamano="4"
+			requerido="1" mapeo="horaUltConEr" />
+		<Campo id="ipUltConEr" orden="6" tipoDato="string" tamano="0"
+			requerido="1" mapeo="ipUltConEr" />
+	</Mensaje>
+</MsgConfiguration>

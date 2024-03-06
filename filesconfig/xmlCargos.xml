@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="24" nombre="CARGOS" recibido="1" firmado="1"
+		acuse="0" partido="1" sumaBytes="1"
+		bean="banxico.spei.clases.values.CargosTuxedoValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1"
+			mapeo="horaMaquina" />
+		<Campo id="fechaOperacion" orden="3" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaOperacion" />
+		<Campo id="folioServidor" orden="4" tipoDato="long" tamano="4"
+			requerido="1" mapeo="folioServidor" />
+		<Campo id="numCargos" orden="5" tipoDato="long" tamano="4"
+			requerido="1" mapeo="numCargos" />
+		<ArregloSimple id="indiceInstBeneficiaria" orden="6"
+			tipoDato="ArrayList" subtipo="char" tamano="1" requerido="1"
+			tamanoArreglo="noAbonosTT" mapeo="Instituciones" />
+		<ArregloSimple id="claveInstBeneficiaria" orden="7"
+			tipoDato="ArrayList" subtipo="long" tamano="4" requerido="1"
+			tamanoArreglo="noAbonosTT" mapeo="InstClaves" />
+		<ArregloSimple id="folioPaquete" orden="8" tipoDato="ArrayList"
+			subtipo="long" tamano="4" requerido="1" tamanoArreglo="noAbonosTT"
+			mapeo="NumPaqPagos" />
+		<ArregloSimple id="folioPago" orden="9" tipoDato="ArrayList"
+			subtipo="short" tamano="2" requerido="1" tamanoArreglo="noAbonosTT"
+			mapeo="FoliosPagos" />
+		<Campo id="montoTotal" orden="10" tipoDato="money" tamano="8"
+			requerido="1" mapeo="MontoTotal" />
+		<Campo id="saldoNoReservado" orden="11" tipoDato="money" tamano="8"
+			requerido="1" mapeo="Saldo" />
+		<Campo id="saldoReservado" orden="12" tipoDato="money" tamano="8"
+			requerido="1" mapeo="SaldoRes" />
+	</Mensaje>
+</MsgConfiguration>

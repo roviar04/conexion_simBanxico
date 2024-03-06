@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="194" nombre="CrtNoExiste" recibido="1" firmado="1"
+		acuse="0" partido="0" sumaBytes="0"
+		bean="com.praxis.speilight.communication.beans.MensajeDatosCertBean">
+		<Campo id="fecha" orden="2" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fecha" />
+		<Campo id="noCertificado" orden="3" tipoDato="string" tamano="0"
+			requerido="1" mapeo="noCertificado" />
+	</Mensaje>
+</MsgConfiguration>

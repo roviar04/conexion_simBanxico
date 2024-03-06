@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="197" nombre="CANCELATRASPASOSPEISIAC" recibido="0"
+		firmado="1" acuse="0" partido="0" sumaBytes="1"
+		bean="banxico.spei.clases.values.MensajeTuxedoValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1"
+			mapeo="horaMaquina" />
+		<Campo id="fechaOperacion" orden="3" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaOperacion" />
+		<Campo id="folioSolicitud" orden="4" tipoDato="long" tamano="4"
+			requerido="1" mapeo="folioSolicitud" />
+		<Campo id="indiceInstitucionOrdenante" orden="5" tipoDato="char"
+			tamano="1" requerido="1" mapeo="indInstitucion" />
+		<Campo id="claveOrdenante" orden="6" tipoDato="long" tamano="4"
+			requerido="1" mapeo="cveInstitucion" />
+		<Campo id="folioTraspasoCancel" orden="7" tipoDato="long"
+			tamano="4" requerido="1" mapeo="folioSolicitudXCancelar" />
+		<Campo id="indiceCertFirmante" orden="8" tipoDato="char" tamano="1"
+			requerido="1" mapeo="indCertFirm" />
+	</Mensaje>
+</MsgConfiguration>

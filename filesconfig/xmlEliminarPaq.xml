@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd" >
+	<Mensaje id="33" nombre="ELIMINARPAQ" recibido="1" firmado="0" acuse="0" partido="1" sumaBytes="1" cifrado="1" bean="banxico.spei.clases.values.EliminaPaqValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4" requerido="1" mapeo="fechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1" mapeo="horaMaquina"/>
+		<Campo id="folioServidor" orden="4" tipoDato="long" tamano="4" requerido="1" mapeo="folioServidor"/>
+		<Campo id="cantPaquetesT" orden="5" tipoDato="long" tamano="4" requerido="1" mapeo="numPaquetes"/>
+		<ArregloSimple id="folioPaqueteT" orden="6" tipoDato="ArrayList" subtipo="long" tamano="4" requerido="0" tamanoArreglo="cantPaquetesT" mapeo="foliosPaquete" />
+		<ArregloSimple id="cantPagosPaquete" orden="7" tipoDato="ArrayList" subtipo="short" tamano="2" requerido="0" tamanoArreglo="cantPaquetesT" mapeo="numPagosPaquete" />
+		<ArregloSimple id="indiceInstitucionBeneficiariaT" orden="8" tipoDato="ArrayList" subtipo="char" tamano="1" requerido="0" tamanoArreglo="cantPaquetesT" mapeo="instituciones" />
+		<ArregloSimple id="claveBeneficiariaT" orden="9" tipoDato="ArrayList" subtipo="long" tamano="4" requerido="0" tamanoArreglo="cantPaquetesT" mapeo="instClaves" />
+		<Campo id="cantPagosT" orden="10" tipoDato="long" tamano="4" requerido="1" mapeo="numPagosEliminar"/>
+		<ArregloSimple id="folioPago" orden="11" tipoDato="ArrayList" subtipo="short" tamano="2" requerido="0" tamanoArreglo="cantPagosT" mapeo="foliosPago" />
+		<Campo id="cantPaquetesV" orden="12" tipoDato="long" tamano="4" requerido="1" mapeo="numPaquetesTV"/>
+		<ArregloSimple id="folioPaqueteV" orden="13" tipoDato="ArrayList" subtipo="long" tamano="4" requerido="0" tamanoArreglo="cantPaquetesV" mapeo="foliosPaqueteTV" />
+		<ArregloSimple id="indiceInstitucionBeneficiariaV" orden="14" tipoDato="ArrayList" subtipo="char" tamano="1" requerido="0" tamanoArreglo="cantPaquetesV" mapeo="institucionesTV" />
+		<ArregloSimple id="claveBeneficiariaV" orden="15" tipoDato="ArrayList" subtipo="long" tamano="4" requerido="0" tamanoArreglo="cantPaquetesV" mapeo="instClavesTV" />
+		<Campo id="motivo" orden="16" tipoDato="schar" tamano="1" requerido="1" mapeo="motEliminacion"/>
+	</Mensaje>
+</MsgConfiguration>
+

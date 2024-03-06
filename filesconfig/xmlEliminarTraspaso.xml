@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="50" nombre="ELIMINARTRASPASO" recibido="1"
+		firmado="0" acuse="0" partido="1" sumaBytes="1"
+		bean="banxico.spei.clases.values.EliminarTraspasoValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1"
+			mapeo="horaMaquina" />
+		<Campo id="fechaOperacion" orden="3" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaOperacion" />
+		<Campo id="folioServidor" orden="4" tipoDato="long" tamano="4"
+			requerido="1" mapeo="folioServidor" />
+		<Campo id="cantTraspasos" orden="5" tipoDato="long" tamano="4"
+			requerido="1" mapeo="numTraspasos" />
+		<ArregloSimple id="folios" orden="6" tipoDato="ArrayList"
+			subtipo="long" tamano="4" requerido="0" tamanoArreglo="cantTraspasos"
+			mapeo="foliosSolicitud" />
+		<Campo id="motivo" orden="7" tipoDato="schar" tamano="1"
+			requerido="1" mapeo="motivo" />
+	</Mensaje>
+</MsgConfiguration>

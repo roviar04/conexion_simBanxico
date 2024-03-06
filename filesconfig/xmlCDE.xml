@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="25" nombre="CDE" recibido="0" firmado="0" acuse="0"
+		partido="0" sumaBytes="0" bean="com.praxis.speilight.processing.beans.CDE">
+		<Campo id="fechaOperacion" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaOperacion" />
+		<Campo id="indiceInstOrd" orden="2" tipoDato="char" tamano="1"
+			requerido="1" mapeo="indiceInstOrd" />
+		<Campo id="indiceInstBen" orden="3" tipoDato="char" tamano="1"
+			requerido="1" mapeo="indiceInstBen" />
+		<Campo id="claveRastreo" orden="4" tipoDato="string" tamano="0"
+			requerido="1" mapeo="claveRastreo" />
+		<Campo id="montoOperacion" orden="5" tipoDato="money" tamano="8"
+			requerido="1" mapeo="montoOperacion" />
+	</Mensaje>
+</MsgConfiguration>

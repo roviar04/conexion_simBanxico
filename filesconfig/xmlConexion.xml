@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="16" nombre="CONEXION" recibido="0" firmado="0"
+		acuse="0" partido="0" sumaBytes="0"
+		bean="com.praxis.speilight.communication.beans.MensajeBean" />
+</MsgConfiguration>

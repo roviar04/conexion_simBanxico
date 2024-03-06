@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="208" nombre="MANTOCRT" recibido="0" firmado="1"
+		acuse="0" partido="0" sumaBytes="1"
+		bean="banxico.spei.clases.values.MantoCRTValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1"
+			mapeo="horaMaquina" />
+		<Campo id="folioSolicitud" orden="4" tipoDato="long" tamano="4"
+			requerido="1" mapeo="folioSolicitud" />
+		<Campo id="indiceCertFirmante" orden="5" tipoDato="char" tamano="1"
+			requerido="1" mapeo="indCertFirm" />
+		<Campo id="indiceInstitucion" orden="6" tipoDato="char" tamano="1"
+			requerido="1" mapeo="indInstitucion" />
+		<Campo id="claveInstitucion" orden="7" tipoDato="long" tamano="4"
+			requerido="1" mapeo="CveInstitucion" />
+		<Campo id="indiceCertActualizar" orden="8" tipoDato="char"
+			tamano="1" requerido="1" mapeo="IndCertAct" />
+		<Campo id="numeroCertActualizar" orden="9" tipoDato="string"
+			tamano="0" requerido="1" mapeo="NumSerieCertAct" />
+		<Campo id="nivelCert" orden="10" tipoDato="short" tamano="2"
+			requerido="1" mapeo="NivelCert" />
+		<Campo id="operacion" orden="11" tipoDato="schar" tamano="1"
+			requerido="1" mapeo="EstadoCert" />
+	</Mensaje>
+</MsgConfiguration>

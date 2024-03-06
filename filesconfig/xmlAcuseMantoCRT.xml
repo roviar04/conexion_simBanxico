@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="36" nombre="ACUSEMANTOCRT" recibido="1" firmado="0"
+		acuse="1" partido="0" sumaBytes="1"
+		bean="banxico.spei.clases.values.AcuseMantoCrtValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1"
+			mapeo="horaMaquina" />
+		<Campo id="folioServidor" orden="3" tipoDato="long" tamano="4"
+			requerido="1" mapeo="folioServidor" />
+		<Campo id="folioSolicitud" orden="4" tipoDato="long" tamano="4"
+			requerido="1" mapeo="folioSolicitud" />
+		<Campo id="indiceCertActualizado" orden="5" tipoDato="char"
+			tamano="1" requerido="1" mapeo="indCertAct" />
+		<Campo id="estadoCert" orden="6" tipoDato="schar" tamano="1"
+			requerido="1" mapeo="edoCert" />
+		<Campo id="estadoSolicitud" orden="7" tipoDato="char" tamano="1"
+			requerido="1" mapeo="edoSolicitud" />
+	</Mensaje>
+</MsgConfiguration>

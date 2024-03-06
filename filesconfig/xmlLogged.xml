@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="253" nombre="LOGGED" recibido="1" firmado="0"
+		acuse="0" partido="0" sumaBytes="0"
+		bean="com.praxis.speilight.communication.beans.MensajeLoggedBean">
+		<Campo id="cveCliente" orden="1" tipoDato="short" tamano="2"
+			requerido="1" mapeo="cveCliente" />
+	</Mensaje>
+</MsgConfiguration>

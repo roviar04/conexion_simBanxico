@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="16" nombre="ConnUsr" recibido="0" firmado="1"
+		acuse="0" partido="0" sumaBytes="0"
+		bean="banxico.spei.clases.values.LoginAraValue">
+		<Campo id="noCertificado" orden="2" tipoDato="string" tamano="0"
+			requerido="1" mapeo="numSerieCert" />
+	</Mensaje>
+</MsgConfiguration>

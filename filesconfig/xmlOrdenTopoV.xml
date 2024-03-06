@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MsgConfiguration xmlns="http://tempuri.org/xsdMensajes.xsd">
+	<Mensaje id="206" nombre="ORDENTOPOV" recibido="0" firmado="1"
+		acuse="0" partido="1" sumaBytes="1"
+		bean="banxico.spei.clases.values.EnvioOrdenesPagoTuxedoValue">
+		<Campo id="fecha" orden="1" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaMaquina" />
+		<Campo id="hora" orden="2" tipoDato="time" tamano="3" requerido="1"
+			mapeo="horaMaquina" />
+		<Campo id="fechaOperacion" orden="3" tipoDato="date" tamano="4"
+			requerido="1" mapeo="fechaOperacion" />
+		<Campo id="indiceInstitucionOrdenante" orden="4" tipoDato="char"
+			tamano="1" requerido="1" mapeo="indInstOrdenante" />
+		<Campo id="claveOrdenante" orden="5" tipoDato="long" tamano="4"
+			requerido="1" mapeo="claveInstitucionOrdenante" />
+		<Campo id="indiceInstitucionBeneficiaria" orden="6" tipoDato="char"
+			tamano="1" requerido="1" mapeo="indInstBeneficiaria" />
+		<Campo id="claveBeneficiaria" orden="7" tipoDato="long" tamano="4"
+			requerido="1" mapeo="claveInstBeneficiaria" />
+		<Campo id="folioPaquete" orden="8" tipoDato="long" tamano="4"
+			requerido="1" mapeo="folioSolicitud" />
+		<Campo id="indiceCertFirmante" orden="9" tipoDato="char" tamano="1"
+			requerido="1" mapeo="indCertFirm" />
+		<Campo id="prioridad" orden="10" tipoDato="char" tamano="1"
+			requerido="1" mapeo="paqPrioridad" />
+		<Campo id="noPagos" orden="11" tipoDato="long" tamano="4"
+			requerido="1" mapeo="paqNoPagos" />
+		<ArregloCompuesto id="arrNoPagos" orden="12"
+			tipoDato="Vector" subtipo="OrdenesPagoValue" tamanoArreglo="noPagos"
+			mapeo="ordenes">
+			<Campo id="folio" orden="13" tipoDato="short" tamano="2"
+				requerido="1" mapeo="OpFolio" />
+			<Campo id="montoAlta" orden="14" tipoDato="money1" tamano="4"
+				requerido="1" mapeo="OpMontoBig" />
+			<Campo id="montoBaja" orden="15" tipoDato="money2" tamano="4"
+				requerido="1" mapeo="OpMontoBig" />
+			<Campo id="tipoPago" orden="16" tipoDato="short" tamano="2"
+				requerido="1" mapeo="TpClave" />
+			<Campo id="tamanoDetalle" orden="17" tipoDato="short" tamano="2"
+				requerido="1" mapeo="tamDetalle" />
+			<Campo id="claveRastreo" orden="18" tipoDato="string" tamano="0"
+				requerido="1" mapeo="OpCveRastreo" />
+		</ArregloCompuesto>
+		<Campo id="totalDetalles" orden="19" tipoDato="long" tamano="4"
+			requerido="1" mapeo="tamTotalDetalle" />
+		<ArregloSimple id="detalles" orden="20" tipoDato="Vector"
+			subtipo="string" tamanoArreglo="noPagos" mapeo="detallePago" />
+		<Campo id="tamTotalCDEs" orden="21" tipoDato="long" tamano="4"
+			requerido="1" mapeo="TamTotalCDEs" />
+		<ArregloSimple id="cdes" orden="22" tipoDato="Array"
+			subtipo="Byte" tamanoArreglo="tamTotalCDEs" mapeo="arregloCDEs" />
+	</Mensaje>
+</MsgConfiguration>
